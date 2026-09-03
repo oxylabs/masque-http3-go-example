@@ -1,4 +1,4 @@
-module masque-http3-go-example
+module github.com/oxylabs/masque-http3-go-example
 
 go 1.26.5
 

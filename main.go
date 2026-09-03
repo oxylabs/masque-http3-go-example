@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"masque-http3-go-example/client"
+	"github.com/oxylabs/masque-http3-go-example/client"
 )
 
 var (
