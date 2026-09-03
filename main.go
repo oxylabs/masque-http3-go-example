@@ -29,12 +29,14 @@ func main() {
 
 	flag.Parse()
 
+	start := time.Now()
 	resp, err := client.HTTP3OverMasque(*proxyUser, *proxyPass, *proxyHost, *targetHost, *targetPort, *insecureProxy, *insecureOrigin, *timeout)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer resp.Body.Close()
 
+	fmt.Println("Request took: ", time.Since(start).String(), "\n")
 	fmt.Println("Status from target: ", resp.Status, "\n")
 	fmt.Println("Headers: ")
 	for k, v := range resp.Header {
