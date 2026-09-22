@@ -32,3 +32,5 @@ Usage (type `./masque-h3 --usage` after build):
   -u string
         proxy user
 ```
+
+*Google is a restricted target to use with UDP connection.*
